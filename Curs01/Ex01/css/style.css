@@ -40,6 +40,12 @@ body > h1 {
   }
 }
 
+@media (max-width: 992px) {
+  .box-4 {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .box-5 {
     color: white;
@@ -49,11 +55,6 @@ body > h1 {
   }
 }
 
-@media (max-width: 992px) {
-  .box-4 {
-    display: none;
-  }
-}
 
 @media (min-width: 1200) {
   .box-5 {
@@ -75,3 +76,54 @@ body > h1 {
     display: block;
   }
 }
+
+@media (max-width:576px){
+  .box-1{
+    display: none;
+  }
+}
+
+@media(min-width:992px){
+  .box-1{
+    display: none;
+  }
+}
+
+@media(max-width:992px){
+  .box-2{
+    color: white;
+    border-color: yellow;
+  }
+}
+
+@media(min-width:500px) and (max-width:1000px){
+  body > h2{
+    display: block;
+  }
+}
+/* Aici nu se inverzeste pixeltab-ul, imi zice sa adaug regula body > h2,  no idea why */
+
+@media(max-width:576px){
+  body{
+    padding: 15px;
+  }
+}
+
+@media(min-width:576px){
+  body>h3{
+    display: block;
+  }
+}
+
+@media(min-width:1000px){
+  body>h3{
+    color: red;
+  }
+}
+
+@media(min-width:1200px){
+  body>h3{
+    display: none;
+  }
+}
+/* la fel ca mai sus */
