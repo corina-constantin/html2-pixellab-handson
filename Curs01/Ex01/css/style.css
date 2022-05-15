@@ -10,6 +10,10 @@ body {
   float: left;
 }
 
+body > h1 {
+  display: none;
+}
+
 .box-1 {
   background-color: aquamarine;
 }
@@ -30,17 +34,44 @@ body {
   background-color: lightpink;
 }
 
-
 @media (max-width: 576px) {
-
+  .box-2 {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-
+  .box-5 {
+    color: white;
+  }
+  .box-3 {
+    border-color: green;
+  }
 }
 
 @media (max-width: 992px) {
-
+  .box-4 {
+    display: none;
+  }
 }
 
+@media (min-width: 1200) {
+  .box-5 {
+    display: none;
+  }
+}
 
+@media (min-width: 992px) {
+  .box-3 {
+    display: none;
+  }
+  .box-4 {
+    color: red;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  body > h1 {
+    display: block;
+  }
+}
