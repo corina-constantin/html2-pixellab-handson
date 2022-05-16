@@ -1,0 +1,17 @@
+ul a {
+  text-decoration: none;
+}
+ul a:hover {
+  text-decoration: none;
+  color: red;
+}
+ul a:active {
+  color: purple;
+}
+
+.para-short {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
