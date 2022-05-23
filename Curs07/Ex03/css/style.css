@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100wh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.loader {
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: load 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
