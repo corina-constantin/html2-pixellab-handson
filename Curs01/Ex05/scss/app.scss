@@ -1,17 +1,69 @@
+$color1: red;
+$color2: purple;
+$color3: green;
+$color4: magenta;
+$color5: lightcoral;
+$color6: pink;
+
 ul {
   a {
     text-decoration: none;
     &:hover {
       text-decoration: none;
-      color: red;
+      color: $color1;
     }
     &:active {
-      color: purple;
+      color: $color2;
     }
   }
+}
+
+ul {
+  a {
+    text-decoration: none;
+    &:visited {
+      color: $color3;
+    }
+  }
+}
+
+.para {
+  padding: 10px 20px;
 }
 
 .para-short {
   width: 50%;
   margin: 0 auto;
+}
+
+.reverse {
+  .para {
+    width: 50%;
+    padding: 0;
+  }
+  .para-short {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+ol {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $color4;
+    }
+    &:active {
+      color: $color6;
+    }
+    &:visited {
+      color: $color5;
+    }
+  }
+}
+
+.all-visited {
+  a {
+    text-decoration: line-through;
+  }
 }
