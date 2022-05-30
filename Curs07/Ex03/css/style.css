@@ -9,6 +9,7 @@ body {
   font-family: sans-serif;
 }
 
+/*
 .loader {
   text-transform: uppercase;
   font-weight: bold;
@@ -22,4 +23,20 @@ body {
   100% {
     opacity: 0;
   }
+}
+*/
+
+@keyframes colors{
+  0%{
+    color: white;
+  }
+  100%{
+    color: black;
+  }
+}
+
+.loader {
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: colors 1.2s ease-in-out infinite alternate;
 }

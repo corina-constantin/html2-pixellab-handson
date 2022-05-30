@@ -17,12 +17,36 @@ body {
     /* translate(x,y) */
     transform: translate(calc(100vw - 100px), calc(100vh - 100px));
   }
-/* ca sa se duca in sus ii pun 0 pe axa y */
+  /* ca sa se duca in sus ii pun 0 pe axa y */
 
   100% {
-transform: translate(0,0);  }
+    transform: translate(0, 0);
+  }
 }
 
 .box-animate {
   animation: animate 10s ease-out;
+}
+
+
+@keyframes animate2 {
+  20% {
+    transform: translate(0, calc(100vh - 200px));
+  }
+  40% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 200px));
+  }
+  60% {
+    transform:translate(calc(100vw - 100px),-100px)
+  }
+  80% {
+    transform: translate(0, calc(100vh - 200px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.box-animate2 {
+  animation: animate2 10s ease-out;
 }
