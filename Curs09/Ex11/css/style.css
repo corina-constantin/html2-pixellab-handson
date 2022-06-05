@@ -49,6 +49,14 @@ body {
 }
 /* do not touch this */
 
+.flex-container-01 {
+  flex-direction: column-reverse;
+}
+
+.flex-container-01 :nth-child(2){
+  order: 1;
+}
+
 .flex-container-02{
   flex-direction: column;
 }
@@ -67,4 +75,36 @@ body {
 
 .flex-container-03 :nth-last-of-type(2){
 order: 1;
+}
+
+.flex-container-04{
+  flex-direction: column;
+}
+
+.flex-container-04 :nth-child(3){
+order: -1;
+}
+
+.flex-container-04 :nth-child(4){
+  order: 1;
+}
+
+.flex-container-05 {
+  flex-direction: column-reverse;
+}
+
+.flex-container-05 :last-child{
+order: -1;
+}
+
+.flex-container-05 :nth-child(2){
+  order: -2;
+}
+
+.flex-container-06 {
+  flex-direction: column;
+}
+
+.flex-container-06 :nth-child(3){
+  order: -1;
 }
