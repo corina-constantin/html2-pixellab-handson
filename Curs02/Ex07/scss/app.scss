@@ -32,7 +32,7 @@ $backgrounds: (
   }
 }
 
-$texte: (
+$colors: (
   'main': red,
   'primary': blue,
   'secondary': green,
@@ -40,7 +40,7 @@ $texte: (
   'neutral': gray,
 );
 
-@each $text, $color in $texte {
+@each $text, $color in $colors {
   .text-#{$text} {
     color: $color;
   }
