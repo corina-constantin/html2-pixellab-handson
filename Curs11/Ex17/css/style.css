@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  grid-auto-columns: 150px;
+}
+
+.grid-item-1 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background: lightblue;
+}
+
+.grid-item-2 {
+  grid-column: 8 / 10;
+  background-color: lightblue;
+}
