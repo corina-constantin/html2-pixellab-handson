@@ -51,12 +51,22 @@
   grid-area: footer;
 }
 
-@media(min-width:520px){
+@media (min-width: 521px){
   .grid-container{
     grid-template-areas:
     'header'
     'sidebar'
     'content'
     'footer';
+  }
+}
+
+@media(min-width: 769px){
+  .grid-container{
+    grid-template-areas:
+    'header header header'
+    'sidebar . content'
+    'footer footer footer';
+    grid-template-columns: 320px 25px 1fr;
   }
 }

@@ -24,15 +24,15 @@
 /* can't touch this 🔨 */
 
 .grid-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
-    'header header header header'
+    'header header header header '
     'sidebar . content content'
-    'sidebar . content content'
-    'footer footer footer footer';
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
+    'sidebar . content content '
+    'footer footer footer footer ';
 }
 
 .grid-item-1 {
@@ -54,10 +54,10 @@
 @media (max-width: 768px) {
   .grid-container {
     grid-template-areas:
-      'header header header header'
+      'header header header header '
       'sidebar . content content'
-      'sidebar . content content'
-      'sidebar footer footer footer';
+      'sidebar . content content '
+      'sidebar footer footer footer ';
   }
 }
 
